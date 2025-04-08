@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const aumentarFonteBotao = document.getElementByld('aumentar-fonte')
     const diminuirFonteBotao = document.getElementByld('diminuir-fonte')
+    const alternaContraste = document.getElementById('alterna-contraste')
     let tamanhoAtualFonte= 1;
 
     aumentarFonteBotao.addEventListener('click', function(){
@@ -26,5 +27,12 @@ document.addEventListener('DOMContentLoaded', function(){
         tamanhoAtualFonte += 0,1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     })
+    alternaContraste.addEventListener('click', function () {
+        document.body.classList.toggle('alto-contraste')
+    })
+
+
+
+
     
     
